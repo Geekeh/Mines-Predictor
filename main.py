@@ -1,6 +1,4 @@
 import cloudscraper as cs #for web scraping and getting data
-from random import randint #wow random package :( check below for where we use it :). btw its used to decide if we wanna do something but it shouldnt awlays happen
-from random import choice #for picking stuff out of a list
 
 #ur bloxflip auth so we can get ur game history
 auth = ''
