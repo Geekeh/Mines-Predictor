@@ -85,9 +85,9 @@ async def self(interaction: discord.Interaction):
     grid[int(roundNum / 7)] = '✔️' #change it to O to know where to click
 
     em = discord.Embed(color=0x0025ff)
-    em.add_field(name='Grid', value="\n" + "```"+grid[0]+grid[1]+grid[2]+grid[3]+grid[4]+"\n"+grid[5]+grid[6]+grid[7]+grid[8]+grid[9]+"\n"+grid[10]+grid[11]+grid[12]+grid[13]+grid[14]+"\n"+grid[15]+grid[16]+grid[17]
-    +"\n"+grid[18]+grid[19]+"\n"+grid[20]+grid[21]+grid[22]+grid[23]+grid[24] + "```\n**Response Time:**\n```" {str(int(time.time() - int(start_time)))})
-    em.set_footer(text='MADE BY Geek#2526, AND MODIFIED BY static#4444')
+    em.add_field(name='Grid', value="\n" + "```"+grid[0]+grid[1]+grid[2]+grid[3]+grid[4]+"\n"+grid[5]+grid[6]+grid[7]+grid[8]+grid[9]+"\n"+grid[10]+grid[11]+grid[12]+grid[13]+grid[14]+"\n"+grid[15]+grid[16]+grid[17] \
+    +grid[18]+grid[19]+"\n"+grid[20]+grid[21]+grid[22]+grid[23]+grid[24] + "```\n" + f"**Response Time:**\n```{str(int(time.time() - int(start_time)))}```")
+    em.set_footer(text='MADE BY Geek#2526, MODIFIED BY static#444')
     await interaction.response.send_message(embed=em)
     
  client.run('BOT TOKEN GOES HERE')
