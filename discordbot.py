@@ -46,7 +46,7 @@ async def login(interaction: discord.Interaction, auth_token : str):
         em = discord.Embed(description=f"**<@{user}> **Logged in!", color=0x0025ff)
         await interaction.response.send_message(embed=em)
         
- @tree.command(name = 'real_mines', description='mines predictor') #guild specific slash command
+@tree.command(name = 'real_mines', description='mines predictor') #guild specific slash command
 async def self(interaction: discord.Interaction):
     user = interaction.user.id
     valid = False
@@ -90,4 +90,4 @@ async def self(interaction: discord.Interaction):
     em.set_footer(text='MADE BY Geek#2526, AND MODIFIED BY static#4444')
     await interaction.response.send_message(embed=em)
     
-    client.run('BOT TOKEN GOES HERE')
+ client.run('BOT TOKEN GOES HERE')
